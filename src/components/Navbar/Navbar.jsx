@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
@@ -25,7 +25,7 @@ const Navbar = ({ setShowLogin }) => {
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
-          <a href="#">Home</a>
+          Home
         </Link>
         <a
           href="#explore-menu"
